@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>my_wysiwyg</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+
+<body>
+	<div id="textarea">
+		<div id="contentarea" contentEditable>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="assets/jquery.js"></script>
+
+	<!-- insertion des boutons dans html-->
+	<script>
+		$(function () 
+		{
+			$('#textarea').my_wysiwyg(
+			{
+				buttons: ["bold", "italic", "strikethrough", "left", "center", "right", "justify", "url", "minus", "plus", "fontSize", "fontColor", "insertImage"]
+			})
+		})
+	</script>
+
+</body>
+</html>
